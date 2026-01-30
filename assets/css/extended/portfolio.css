@@ -139,8 +139,8 @@
     text-decoration: none;
 }
 
-/* 标题悬浮滚动效果 */
-.projects-list .project-card:hover .entry-header h2 {
+/* 标题悬浮滚动效果 - 只在文字超出时滚动 */
+.projects-list .project-card:hover .entry-header h2[data-overflow="true"] {
     animation: scrollTitle 3s ease-in-out;
 }
 
@@ -286,7 +286,7 @@
     display: inline-block;
 }
 
-.sub-project-card:hover h3 a {
+.sub-project-card:hover h3[data-overflow="true"] a {
     animation: marquee 4s linear infinite;
 }
 

@@ -85,4 +85,16 @@
   {{ end }}
 </article>
 
+<script>
+// 检测子项目卡片标题是否超出容器宽度
+document.addEventListener('DOMContentLoaded', function() {
+    const titles = document.querySelectorAll('.sub-project-card h3');
+    titles.forEach(function(title) {
+        const container = title.parentElement;
+        if (title.scrollWidth > container.clientWidth) {
+            title.setAttribute('data-overflow', 'true');
+        }
+    });
+});
+</script>
 {{ end }}

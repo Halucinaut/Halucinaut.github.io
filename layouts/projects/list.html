@@ -48,4 +48,17 @@
   </nav>
 </footer>
 {{ end }}
+
+<script>
+// 检测标题是否超出容器宽度，超出则添加 data-overflow 属性
+document.addEventListener('DOMContentLoaded', function() {
+    const titles = document.querySelectorAll('.projects-list .project-card .entry-header h2');
+    titles.forEach(function(title) {
+        const container = title.parentElement;
+        if (title.scrollWidth > container.clientWidth) {
+            title.setAttribute('data-overflow', 'true');
+        }
+    });
+});
+</script>
 {{ end }}
