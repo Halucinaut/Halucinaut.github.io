@@ -11,6 +11,7 @@ demo_url: ""
 repo_url: "https://github.com/Halucinaut/halucinaut-skills/tree/main/skills/research%26study/paper-reproduction-assistant"
 summary: "Universal Skill Package (通用技能包) - 为 AI 编程助手注入顶会审稿人级别的代码审计与复现能力。"
 parent_project: "Halucinaut Skills Registry"
+likes: 256
 ---
 
 ## 📖 项目简介

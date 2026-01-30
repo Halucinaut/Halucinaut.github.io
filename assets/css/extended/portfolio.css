@@ -67,11 +67,11 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* 上方大图 - 3:4 比例 */
+/* 上方大图 - 1:1 比例 */
 .projects-list .project-card .entry-cover {
     margin: 0;
     overflow: hidden;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     width: 100%;
 }
 
