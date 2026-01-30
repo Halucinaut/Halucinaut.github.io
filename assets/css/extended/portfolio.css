@@ -141,33 +141,15 @@
 
 /* 标题悬浮滚动效果 */
 .projects-list .project-card:hover .entry-header h2 {
-    animation: scrollTitle 3s linear infinite;
+    animation: scrollTitle 3s ease-in-out;
 }
 
 @keyframes scrollTitle {
-    0%, 20% {
+    0%, 100% {
         transform: translateX(0);
     }
-    80%, 100% {
-        transform: translateX(calc(-100% + 100%));
-    }
-}
-
-/* 更好的滚动效果 - 使用 marquee 方式 */
-.projects-list .project-card .entry-header h2 {
-    position: relative;
-}
-
-.projects-list .project-card:hover .entry-header h2 {
-    animation: marquee 4s linear infinite;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
+    50% {
+        transform: translateX(-20px);
     }
 }
 
@@ -220,8 +202,8 @@
     }
 }
 
-/* 子项目详情页隐藏封面图（父项目详情页显示封面图） */
-.sub-project-page .entry-cover {
+/* 子项目详情页隐藏主封面图（只隐藏文章顶部的封面，不隐藏卡片中的图片） */
+.sub-project-page > .entry-cover {
     display: none;
 }
 
