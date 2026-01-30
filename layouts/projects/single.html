@@ -78,9 +78,8 @@
     {{ end }}
   </footer>
 
-  {{ if not (.Param "comments") }}
+  <!-- 项目页面显示评论区 -->
   {{ partial "comments.html" . }}
-  {{ end }}
 </article>
 
 <script>
