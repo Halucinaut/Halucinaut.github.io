@@ -10,13 +10,6 @@
     <atom:link href="http://localhost:62956/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Halucinaut Skills Registry</title>
-      <link>http://localhost:62956/projects/claude-skills/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/projects/claude-skills/</guid>
-      <description>A registry of modular cognitive skills designed to help AI models accurately implement user requirements.</description>
-    </item>
-    <item>
-      <title>Halucinaut Skills Registry</title>
       <link>http://localhost:62956/projects/halucinaut-skills/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:62956/projects/halucinaut-skills/</guid>
