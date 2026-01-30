@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Labs on Halucinaut&#39;s Lab</title>
-    <link>http://localhost:62956/projects/</link>
-    <description>Recent content in Labs on Halucinaut&#39;s Lab</description>
+    <title>Research Tools on Halucinaut&#39;s Lab</title>
+    <link>http://localhost:62956/tags/research-tools/</link>
+    <description>Recent content in Research Tools on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62956/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62956/tags/research-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Halucinaut Skills Registry</title>
       <link>http://localhost:62956/projects/claude-skills/</link>

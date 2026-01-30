@@ -2,35 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:62387/projects/claude-skills/</loc>
+    <loc>http://localhost:62956/projects/claude-skills/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/claude/</loc>
+    <loc>http://localhost:62956/tags/cognitive-architecture/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/</loc>
+    <loc>http://localhost:62956/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/projects/</loc>
+    <loc>http://localhost:62956/tags/infrastructure/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/productivity/</loc>
+    <loc>http://localhost:62956/projects/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/prompt-engineering/</loc>
+    <loc>http://localhost:62956/tags/research-tools/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/</loc>
+    <loc>http://localhost:62956/tags/sop/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/about/</loc>
+    <loc>http://localhost:62956/about/</loc>
   </url><url>
-    <loc>http://localhost:62387/categories/</loc>
+    <loc>http://localhost:62956/categories/</loc>
   </url><url>
-    <loc>http://localhost:62387/demos/</loc>
+    <loc>http://localhost:62956/tags/claude/</loc>
   </url><url>
-    <loc>http://localhost:62387/posts/</loc>
+    <loc>http://localhost:62956/demos/</loc>
   </url><url>
-    <loc>http://localhost:62387/search/</loc>
+    <loc>http://localhost:62956/posts/</loc>
+  </url><url>
+    <loc>http://localhost:62956/tags/productivity/</loc>
+  </url><url>
+    <loc>http://localhost:62956/tags/prompt-engineering/</loc>
+  </url><url>
+    <loc>http://localhost:62956/search/</loc>
   </url>
 </urlset>
