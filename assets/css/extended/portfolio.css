@@ -202,6 +202,12 @@
     opacity: 0.7;
 }
 
+/* Giscus 反应数 - 右对齐 */
+.projects-list .project-card .giscus-reactions {
+    font-size: 0.75rem;
+    color: var(--secondary);
+}
+
 /* 隐藏不需要的元素 */
 .projects-list .project-card .entry-content,
 .projects-list .project-card .project-buttons,

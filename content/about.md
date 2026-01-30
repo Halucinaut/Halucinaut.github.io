@@ -2,6 +2,7 @@
 title: "About Halucinaut"
 hidemeta: true
 layout: "about"
+comments: false
 ---
 ## 👋 Hello, I'm Halucinaut
 

@@ -37,6 +37,7 @@
       {{ end }}
       <div class="card-footer">
         <span class="post-date">{{ .Date.Format "01-02" }}</span>
+        <span class="giscus-reactions" data-path="{{ .RelPermalink }}">👍 0</span>
       </div>
     </div>
   </a>
@@ -69,5 +70,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// 从 Giscus 获取反应数
+async function fetchGiscusReactions() {
+    const repo = 'Halucinaut/Halucinaut.github.io';
+    const category = 'Announcements';
+    const reactionElements = document.querySelectorAll('.giscus-reactions');
+    
+    try {
+        // 获取 Discussions 列表
+        const response = await fetch(`https://api.github.com/repos/${repo}/discussions?per_page=100`);
+        if (!response.ok) throw new Error('Failed to fetch discussions');
+        
+        const discussions = await response.json();
+        
+        reactionElements.forEach(function(el) {
+            const path = el.getAttribute('data-path');
+            // 查找匹配的 discussion（根据标题或 body 中的路径）
+            const discussion = discussions.find(function(d) {
+                return d.body && d.body.includes(path);
+            });
+            
+            if (discussion && discussion.reactions) {
+                const total = discussion.reactions.total_count;
+                if (total > 0) {
+                    el.textContent = '👍 ' + total;
+                }
+            }
+        });
+    } catch (error) {
+        console.log('Giscus reactions fetch failed:', error);
+    }
+}
+
+// 页面加载后获取反应数
+fetchGiscusReactions();
 </script>
 {{ end }}
