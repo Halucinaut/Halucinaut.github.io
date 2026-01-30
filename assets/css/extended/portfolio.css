@@ -41,21 +41,20 @@
     transform: translateY(-2px);
 }
 
-/* 项目卡片样式优化 - 缩略图风格 */
+/* 项目卡片样式优化 */
 .project-card {
     position: relative;
 }
 
-/* 列表页卡片 - 小红书风格 */
+/* 瀑布流布局 */
 .projects-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
 }
 
 .projects-list .project-card {
-    display: flex;
-    flex-direction: column;
+    break-inside: avoid;
+    margin-bottom: 20px;
     background: var(--theme);
     border-radius: 12px;
     overflow: hidden;
@@ -67,23 +66,22 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* 上方大图 - 1:1 比例 */
+/* 图片保持原始比例 */
 .projects-list .project-card .entry-cover {
     margin: 0;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
     width: 100%;
 }
 
 .projects-list .project-card .entry-cover img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: transform 0.3s ease;
 }
 
 .projects-list .project-card:hover .entry-cover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /* 内容区域 */
@@ -94,9 +92,12 @@
     gap: 8px;
 }
 
-/* 黑色加粗标题 */
+/* 标题容器 - 单行截断 */
 .projects-list .project-card .entry-header {
     margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
 .projects-list .project-card .entry-header h2 {
@@ -105,6 +106,8 @@
     margin: 0;
     line-height: 1.4;
     color: var(--primary);
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .projects-list .project-card .entry-header h2 a {
@@ -112,7 +115,39 @@
     text-decoration: none;
 }
 
-/* 底部信息栏 */
+/* 标题悬浮滚动效果 */
+.projects-list .project-card:hover .entry-header h2 {
+    animation: scrollTitle 3s linear infinite;
+}
+
+@keyframes scrollTitle {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    80%, 100% {
+        transform: translateX(calc(-100% + 100%));
+    }
+}
+
+/* 更好的滚动效果 - 使用 marquee 方式 */
+.projects-list .project-card .entry-header h2 {
+    position: relative;
+}
+
+.projects-list .project-card:hover .entry-header h2 {
+    animation: marquee 4s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* 底部信息栏 - 时间左对齐，点赞右对齐 */
 .projects-list .project-card .card-footer {
     display: flex;
     justify-content: space-between;
@@ -120,14 +155,14 @@
     margin-top: 4px;
 }
 
-/* 浅色小字时间 */
+/* 浅色小字时间 - 左对齐 */
 .projects-list .project-card .post-date {
     font-size: 0.75rem;
     color: var(--secondary);
     opacity: 0.7;
 }
 
-/* 点赞数 */
+/* 点赞数 - 右对齐 */
 .projects-list .project-card .likes {
     display: flex;
     align-items: center;
@@ -151,28 +186,13 @@
 /* 响应式 */
 @media (max-width: 1200px) {
     .projects-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .projects-list {
-        grid-template-columns: repeat(2, 1fr);
+        column-count: 2;
     }
 }
 
 @media (max-width: 640px) {
     .projects-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-    
-    .projects-list .project-card .card-body {
-        padding: 8px;
-    }
-    
-    .projects-list .project-card .entry-header h2 {
-        font-size: 0.85rem;
+        column-count: 1;
     }
 }
 
