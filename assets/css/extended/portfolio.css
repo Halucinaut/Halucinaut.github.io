@@ -46,24 +46,38 @@
     position: relative;
 }
 
-/* 列表页缩略图 - 1:1 比例，一行三个 */
+/* 列表页卡片 - 水平布局：左侧1:1图片，右侧标题+简介 */
 .projects-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .projects-list .project-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background: var(--entry);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.projects-list .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 左侧图片 - 1:1比例，固定宽度 */
 .projects-list .project-card .entry-cover {
-    margin: 0 0 12px 0;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    margin: 0;
     overflow: hidden;
     border-radius: 8px;
-    aspect-ratio: 1 / 1;
-    width: 100%;
 }
 
 .projects-list .project-card .entry-cover img {
@@ -71,23 +85,59 @@
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
-.projects-list .project-card:hover .entry-cover img {
-    transform: scale(1.05);
+/* 右侧内容区 */
+.projects-list .project-card .entry-header {
+    margin: 0 0 8px 0;
 }
 
-/* 响应式：平板显示2个，手机显示1个 */
-@media (max-width: 1024px) {
-    .projects-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.projects-list .project-card .entry-header h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
 }
 
+.projects-list .project-card .entry-header h2 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.projects-list .project-card .entry-header h2 a:hover {
+    text-decoration: underline;
+}
+
+.projects-list .project-card .entry-content {
+    flex: 1;
+}
+
+.projects-list .project-card .entry-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 按钮放在最下方 */
+.projects-list .project-card .project-buttons {
+    margin-top: 12px;
+}
+
+/* 响应式：手机上改为垂直布局 */
 @media (max-width: 640px) {
-    .projects-list {
-        grid-template-columns: 1fr;
+    .projects-list .project-card {
+        flex-direction: column;
+    }
+    
+    .projects-list .project-card .entry-cover {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 }
 
