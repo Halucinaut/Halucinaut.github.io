@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-<article class="post-single">
+{{ $isSubProject := .Params.parent_project }}
+<article class="post-single{{ if $isSubProject }} sub-project-page{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title">{{ .Title }}</h1>

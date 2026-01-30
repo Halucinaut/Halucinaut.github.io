@@ -220,8 +220,8 @@
     }
 }
 
-/* 详情页隐藏封面图 */
-.post-single .entry-cover {
+/* 子项目详情页隐藏封面图（父项目详情页显示封面图） */
+.sub-project-page .entry-cover {
     display: none;
 }
 
