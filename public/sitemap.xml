@@ -2,31 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:62956/projects/claude-skills/</loc>
+    <loc>https://halucinaut.github.io/projects/claude-skills/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/tags/claude/</loc>
+    <loc>https://halucinaut.github.io/tags/claude/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/</loc>
+    <loc>https://halucinaut.github.io/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/projects/</loc>
+    <loc>https://halucinaut.github.io/projects/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/tags/productivity/</loc>
+    <loc>https://halucinaut.github.io/tags/productivity/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/tags/prompt-engineering/</loc>
+    <loc>https://halucinaut.github.io/tags/prompt-engineering/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/tags/</loc>
+    <loc>https://halucinaut.github.io/tags/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62956/about/</loc>
+    <loc>https://halucinaut.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:62956/categories/</loc>
+    <loc>https://halucinaut.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:62956/search/</loc>
+    <loc>https://halucinaut.github.io/posts/</loc>
+  </url><url>
+    <loc>https://halucinaut.github.io/search/</loc>
   </url>
 </urlset>

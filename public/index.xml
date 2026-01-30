@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Halucinaut&#39;s Lab</title>
-    <link>http://localhost:62956/</link>
+    <link>https://halucinaut.github.io/</link>
     <description>Recent content on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62956/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://halucinaut.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Claude Skills Collection</title>
-      <link>http://localhost:62956/projects/claude-skills/</link>
+      <link>https://halucinaut.github.io/projects/claude-skills/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/projects/claude-skills/</guid>
+      <guid>https://halucinaut.github.io/projects/claude-skills/</guid>
       <description>我编写的一系列 Claude System Prompts 和工具函数集合，用于增强 AI 的编码与逻辑推理能力。</description>
     </item>
     <item>
       <title>About Halucinaut</title>
-      <link>http://localhost:62956/about/</link>
+      <link>https://halucinaut.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/about/</guid>
+      <guid>https://halucinaut.github.io/about/</guid>
       <description>&lt;h2 id=&#34;-hello-im-halucinaut&#34;&gt;👋 Hello, I&amp;rsquo;m Halucinaut&lt;/h2&gt;
 &lt;p&gt;AI 算法研究员 &amp;amp; Vibe Coder。致力于探索大模型（LLM）的边界，并将其工程化落地为有趣的产品。&lt;/p&gt;
 &lt;h2 id=&#34;-tech-stack&#34;&gt;🛠️ Tech Stack&lt;/h2&gt;
