@@ -215,10 +215,11 @@
     color: var(--primary);
 }
 
+/* 子项目网格 - 固定宽度600px，一行3-4个 */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .sub-project-card {
@@ -227,6 +228,7 @@
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid var(--border);
+    max-width: 600px;
 }
 
 .sub-project-card:hover {
@@ -238,41 +240,57 @@
     display: block;
 }
 
+/* 子项目图片 - 1:1比例 */
 .sub-project-card .entry-cover {
     margin: 0;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    width: 100%;
 }
 
 .sub-project-card .entry-cover img {
-    border-radius: 0;
-    height: 180px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.sub-project-card:hover .entry-cover img {
+    transform: scale(1.03);
 }
 
 .sub-project-card .card-content {
-    padding: 20px;
+    padding: 16px;
 }
 
+/* 子项目标题 - 单行截断，悬浮滚动 */
 .sub-project-card h3 {
-    margin: 0 0 12px 0;
-    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
 .sub-project-card h3 a {
     color: var(--primary);
     text-decoration: none;
+    display: inline-block;
 }
 
-.sub-project-card h3 a:hover {
-    text-decoration: underline;
+.sub-project-card:hover h3 a {
+    animation: marquee 4s linear infinite;
 }
 
 .sub-project-card .card-summary {
-    margin: 0 0 16px 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    margin: 0 0 12px 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
     color: var(--secondary);
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -280,14 +298,14 @@
 .sub-project-card .card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
 }
 
 .sub-project-card .tag {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 3px 8px;
     background: var(--entry);
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--secondary);
 }
