@@ -41,16 +41,35 @@
     transform: translateY(-2px);
 }
 
-/* 项目卡片样式优化 */
+/* 项目卡片样式优化 - 缩略图风格 */
 .project-card {
     position: relative;
 }
 
-.project-card .entry-cover img {
+/* 列表页缩略图 */
+.projects-list .project-card .entry-cover {
+    margin: 0 0 16px 0;
+    overflow: hidden;
     border-radius: 8px;
+    aspect-ratio: 16 / 9;
+    max-height: 200px;
+}
+
+.projects-list .project-card .entry-cover img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.projects-list .project-card:hover .entry-cover img {
+    transform: scale(1.05);
+}
+
+/* 详情页隐藏封面图 */
+.post-single .entry-cover {
+    display: none;
 }
 
 /* 子项目区域样式 */
