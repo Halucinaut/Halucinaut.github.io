@@ -25,16 +25,22 @@ url = "/posts/"
 weight = 20
 
 [[menu.main]]
+identifier = "demos"
+name = "Demos"
+url = "/demos/"
+weight = 30
+
+[[menu.main]]
 identifier = "search"
 name = "Search"
 url = "/search/"
-weight = 30
+weight = 40
 
 [[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 40
+weight = 50
 
 # 参数配置
 [params]
