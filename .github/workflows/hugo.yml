@@ -39,12 +39,9 @@ jobs:
           hugo-version: extended_latest
           extended: true
 
-      - name: Build |
-
-        run:          hugo \
-            --gc \
-            --minify \
-            --baseURL "https://halucinaut.github.io/"
+      - name: Build
+        run: |
+          hugo --gc --minify --baseURL "https://halucinaut.github.io/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
