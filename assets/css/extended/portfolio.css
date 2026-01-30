@@ -46,13 +46,24 @@
     position: relative;
 }
 
-/* 列表页缩略图 */
+/* 列表页缩略图 - 1:1 比例，一行三个 */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.projects-list .project-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .projects-list .project-card .entry-cover {
-    margin: 0 0 16px 0;
+    margin: 0 0 12px 0;
     overflow: hidden;
     border-radius: 8px;
-    aspect-ratio: 16 / 9;
-    max-height: 200px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
 }
 
 .projects-list .project-card .entry-cover img {
@@ -65,6 +76,19 @@
 
 .projects-list .project-card:hover .entry-cover img {
     transform: scale(1.05);
+}
+
+/* 响应式：平板显示2个，手机显示1个 */
+@media (max-width: 1024px) {
+    .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* 详情页隐藏封面图 */
