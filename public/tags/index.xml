@@ -2,87 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Halucinaut&#39;s Lab</title>
-    <link>http://localhost:62956/tags/</link>
+    <link>https://halucinaut.github.io/tags/</link>
     <description>Recent content in Tags on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62956/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://halucinaut.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Code Audit</title>
-      <link>http://localhost:62956/tags/code-audit/</link>
+      <link>https://halucinaut.github.io/tags/code-audit/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/code-audit/</guid>
+      <guid>https://halucinaut.github.io/tags/code-audit/</guid>
       <description></description>
     </item>
     <item>
       <title>Cognitive Architecture</title>
-      <link>http://localhost:62956/tags/cognitive-architecture/</link>
+      <link>https://halucinaut.github.io/tags/cognitive-architecture/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/cognitive-architecture/</guid>
+      <guid>https://halucinaut.github.io/tags/cognitive-architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>http://localhost:62956/tags/deep-learning/</link>
+      <link>https://halucinaut.github.io/tags/deep-learning/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/deep-learning/</guid>
+      <guid>https://halucinaut.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Infrastructure</title>
-      <link>http://localhost:62956/tags/infrastructure/</link>
+      <link>https://halucinaut.github.io/tags/infrastructure/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/infrastructure/</guid>
+      <guid>https://halucinaut.github.io/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
       <title>Paper Reproduction</title>
-      <link>http://localhost:62956/tags/paper-reproduction/</link>
+      <link>https://halucinaut.github.io/tags/paper-reproduction/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/paper-reproduction/</guid>
+      <guid>https://halucinaut.github.io/tags/paper-reproduction/</guid>
       <description></description>
     </item>
     <item>
       <title>Research Tools</title>
-      <link>http://localhost:62956/tags/research-tools/</link>
+      <link>https://halucinaut.github.io/tags/research-tools/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/research-tools/</guid>
+      <guid>https://halucinaut.github.io/tags/research-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>SOP</title>
-      <link>http://localhost:62956/tags/sop/</link>
+      <link>https://halucinaut.github.io/tags/sop/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/sop/</guid>
+      <guid>https://halucinaut.github.io/tags/sop/</guid>
       <description></description>
     </item>
     <item>
       <title>SOTA</title>
-      <link>http://localhost:62956/tags/sota/</link>
+      <link>https://halucinaut.github.io/tags/sota/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/sota/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude</title>
-      <link>http://localhost:62956/tags/claude/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/claude/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>http://localhost:62956/tags/productivity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prompt Engineering</title>
-      <link>http://localhost:62956/tags/prompt-engineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62956/tags/prompt-engineering/</guid>
+      <guid>https://halucinaut.github.io/tags/sota/</guid>
       <description></description>
     </item>
   </channel>
