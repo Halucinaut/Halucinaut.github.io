@@ -25,6 +25,27 @@
   <section class="timeline-header">
     <h2>🚀 Recent Updates</h2>
     <p class="timeline-subtitle">Latest project activities and releases</p>
+    
+    <!-- 总时间轴统计 -->
+    {{ $allProjects := where .Site.RegularPages "Section" "projects" }}
+    {{ $subProjects := where $allProjects "Params.parent_project" "!=" nil }}
+    {{ $parentProjects := where $allProjects "Params.parent_project" "=" nil }}
+    <div class="timeline-stats">
+      <div class="stat-item">
+        <span class="stat-number">{{ len $parentProjects }}</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">{{ len $subProjects }}</span>
+        <span class="stat-label">Updates</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">{{ $subProjects.ByDate.Reverse | first 1 | len }}</span>
+        <span class="stat-label">Latest</span>
+      </div>
+    </div>
   </section>
 
   <!-- 时间流内容 -->
@@ -48,47 +69,47 @@
           {{ end }}
         </div>
         
-        <div class="timeline-card">
-          {{ if .Params.cover.image }}
-          <a href="{{ .RelPermalink }}" class="timeline-image">
-            <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" />
-          </a>
-          {{ end }}
-          
-          <div class="timeline-body">
-            <h3 class="timeline-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            
-            {{ if .Summary }}
-            <p class="timeline-summary">{{ .Summary }}</p>
-            {{ end }}
-            
-            {{ if .Params.tags }}
-            <div class="timeline-tags">
-              {{ range .Params.tags }}
-              <span class="tag">{{ . }}</span>
-              {{ end }}
+        <a href="{{ .RelPermalink }}" class="timeline-card-link">
+          <div class="timeline-card">
+            {{ if .Params.cover.image }}
+            <div class="timeline-image">
+              <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" />
             </div>
             {{ end }}
             
-            <div class="timeline-actions">
-              <a href="{{ .RelPermalink }}" class="action-link">View Details →</a>
-              {{ if .Params.repo_url }}
-              <a href="{{ .Params.repo_url }}" target="_blank" rel="noopener" class="action-link external">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                Code
-              </a>
+            <div class="timeline-body">
+              <h3 class="timeline-title">{{ .Title }}</h3>
+              
+              {{ if .Summary }}
+              <p class="timeline-summary">{{ .Summary }}</p>
               {{ end }}
-              {{ if .Params.demo_url }}
-              <a href="{{ .Params.demo_url }}" target="_blank" rel="noopener" class="action-link external">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                Demo
-              </a>
+              
+              {{ if .Params.tags }}
+              <div class="timeline-tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+              </div>
               {{ end }}
+              
+              <div class="timeline-actions">
+                <span class="action-link">View Details →</span>
+                {{ if .Params.repo_url }}
+                <span class="action-link external" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ .Params.repo_url }}', '_blank')">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Code
+                </span>
+                {{ end }}
+                {{ if .Params.demo_url }}
+                <span class="action-link external" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ .Params.demo_url }}', '_blank')">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </span>
+                {{ end }}
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </article>
     {{ end }}
@@ -178,7 +199,48 @@
 .timeline-subtitle {
   font-size: 0.9rem;
   color: var(--secondary);
-  margin: 0;
+  margin: 0 0 24px 0;
+}
+
+/* 时间轴统计 */
+.timeline-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  background: var(--entry);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
 }
 
 /* 时间流 */
@@ -242,6 +304,13 @@
   opacity: 0.7;
 }
 
+/* 时间流卡片链接 */
+.timeline-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 时间流卡片 */
 .timeline-card {
   display: flex;
@@ -253,9 +322,10 @@
   transition: all 0.2s ease;
 }
 
-.timeline-card:hover {
+.timeline-card-link:hover .timeline-card {
   border-color: var(--primary);
   transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-image {
@@ -283,15 +353,7 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
-}
-
-.timeline-title a {
   color: var(--primary);
-  text-decoration: none;
-}
-
-.timeline-title a:hover {
-  color: var(--secondary);
 }
 
 .timeline-summary {
