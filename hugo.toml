@@ -30,10 +30,19 @@ name = "Search"
 url = "/search/"
 weight = 30
 
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 40
+
 # 参数配置
 [params]
 # 数学公式支持
 math = true
+
+# 开启评论
+comments = true
 
 # 默认主题（自动/暗色/亮色）
 defaultTheme = "auto"

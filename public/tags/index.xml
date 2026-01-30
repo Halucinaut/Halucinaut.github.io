@@ -2,10 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Halucinaut&#39;s Lab</title>
-    <link>http://localhost:55314/tags/</link>
+    <link>http://localhost:62387/tags/</link>
     <description>Recent content in Tags on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:55314/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:62387/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude</title>
+      <link>http://localhost:62387/tags/claude/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62387/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>http://localhost:62387/tags/productivity/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62387/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>http://localhost:62387/tags/prompt-engineering/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:62387/tags/prompt-engineering/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

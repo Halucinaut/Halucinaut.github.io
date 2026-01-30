@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ if .Title }}
+<header class="page-header">
+  {{ partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{ if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{ end }}
+</header>
+{{ end }}
+
+<div class="projects-list">
+{{ range .Pages }}
+<article class="post-entry project-card">
+  {{ if .Params.cover.image }}
+  <figure class="entry-cover">
+    <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt }}" />
+  </figure>
+  {{ end }}
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+  </header>
+  {{ if .Summary }}
+  <div class="entry-content">
+    <p>{{ .Summary }}</p>
+  </div>
+  {{ end }}
+  <footer class="entry-footer">
+    {{ partial "post_meta.html" . }}
+  </footer>
+  <div class="project-buttons">
+    {{ if .Params.demo_url }}
+    <a class="button-demo" href="{{ .Params.demo_url }}" target="_blank" rel="noopener">🚀 Live Demo</a>
+    {{ end }}
+    {{ if .Params.repo_url }}
+    <a class="button-repo" href="{{ .Params.repo_url }}" target="_blank" rel="noopener">💻 Source Code</a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
+</div>
+
+{{ if gt .Paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <a class="prev" href="{{ .Paginator.Prev.URL | absURL }}">← {{ i18n "prev_page" }}</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <a class="next" href="{{ .Paginator.Next.URL | absURL }}">{{ i18n "next_page" }} →</a>
+    {{ end }}
+  </nav>
+</footer>
+{{ end }}
+{{ end }}

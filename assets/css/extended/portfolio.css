@@ -1,0 +1,54 @@
+/* Project Buttons Styling */
+.project-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+.project-buttons a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Demo 按钮样式 - 强调色 */
+.button-demo {
+    background: var(--primary);
+    color: var(--theme);
+    border: 1px solid var(--primary);
+}
+
+.button-demo:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Repo 按钮样式 - 次要色 */
+.button-repo {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.button-repo:hover {
+    background: var(--entry);
+    transform: translateY(-2px);
+}
+
+/* 项目卡片样式优化 */
+.project-card {
+    position: relative;
+}
+
+.project-card .entry-cover img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
