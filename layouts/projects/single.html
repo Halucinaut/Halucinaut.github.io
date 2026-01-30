@@ -51,6 +51,9 @@
             {{ end }}
           </div>
           {{ end }}
+          <div class="card-footer">
+            <span class="giscus-reactions" data-path="{{ .RelPermalink }}">👍 0</span>
+          </div>
         </div>
       </article>
       {{ end }}
@@ -93,5 +96,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// 从 Giscus 获取子项目反应数（复用父页面的函数，如果存在）
+if (typeof fetchGiscusReactions !== 'function') {
+    async function fetchGiscusReactions() {
+        const repo = 'Halucinaut/Halucinaut.github.io';
+        const reactionElements = document.querySelectorAll('.giscus-reactions');
+        
+        if (reactionElements.length === 0) return;
+        
+        try {
+            const response = await fetch(`https://api.github.com/repos/${repo}/discussions?per_page=100`);
+            if (!response.ok) throw new Error('Failed to fetch discussions');
+            
+            const discussions = await response.json();
+            
+            reactionElements.forEach(function(el) {
+                const path = el.getAttribute('data-path');
+                const discussion = discussions.find(function(d) {
+                    return d.body && d.body.includes(path);
+                });
+                
+                if (discussion && discussion.reactions) {
+                    const total = discussion.reactions.total_count;
+                    if (total > 0) {
+                        el.textContent = '👍 ' + total;
+                    }
+                }
+            });
+        } catch (error) {
+            console.log('Giscus reactions fetch failed:', error);
+        }
+    }
+    
+    fetchGiscusReactions();
+}
 </script>
 {{ end }}

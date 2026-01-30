@@ -348,3 +348,17 @@
     color: var(--secondary);
     border: 1px solid var(--border);
 }
+
+/* 子项目卡片底部栏 */
+.sub-project-card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+}
+
+.sub-project-card .giscus-reactions {
+    font-size: 0.75rem;
+    color: var(--secondary);
+}
