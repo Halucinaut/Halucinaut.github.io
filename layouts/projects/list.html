@@ -25,6 +25,16 @@
       <header class="entry-header">
         <h2>{{ .Title }}</h2>
       </header>
+      {{ if .Summary }}
+      <p class="card-summary">{{ .Summary }}</p>
+      {{ end }}
+      {{ if .Params.tags }}
+      <div class="card-tags">
+        {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
       <div class="card-footer">
         <span class="post-date">{{ .Date.Format "01-02" }}</span>
         <span class="likes">{{ .Params.likes | default 0 }}</span>
