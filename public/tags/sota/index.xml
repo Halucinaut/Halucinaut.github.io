@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>SOTA on Halucinaut&#39;s Lab</title>
-    <link>https://halucinaut.github.io/tags/sota/</link>
+    <link>http://localhost:1313/tags/sota/</link>
     <description>Recent content in SOTA on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://halucinaut.github.io/tags/sota/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/sota/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper Reproduction Assistant</title>
-      <link>https://halucinaut.github.io/projects/paper-reproduction-assistant/</link>
+      <link>http://localhost:1313/projects/paper-reproduction-assistant/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://halucinaut.github.io/projects/paper-reproduction-assistant/</guid>
+      <guid>http://localhost:1313/projects/paper-reproduction-assistant/</guid>
       <description>A standardized paper reproduction expert knowledge base. Injects &amp;#39;top-tier conference reviewer&amp;#39; level code audit and replication capabilities into AI coding assistants.</description>
     </item>
   </channel>

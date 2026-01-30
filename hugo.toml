@@ -68,15 +68,9 @@ ShowBreadCrumbs = true
 # 显示代码复制按钮
 ShowCodeCopyButtons = true
 
-# 主页配置 - Profile 模式
+# 主页配置 - 关闭 Profile 模式，使用自定义时间流布局
 [params.profileMode]
-enabled = true
-title = "Halucinaut"
-subtitle = "AI Researcher & Vibe Coder | Exploring Algorithms & Products"
-imageUrl = ""
-imageTitle = ""
-imageWidth = 120
-imageHeight = 120
+enabled = false
 
 # 社交链接
 [[params.socialIcons]]

@@ -1,0 +1,392 @@
+{{ define "main" }}
+
+<!-- 主页时间流布局 -->
+<div class="home-timeline">
+  
+  <!-- 顶部简介 -->
+  <section class="profile-section">
+    <div class="profile-content">
+      <h1>Halucinaut</h1>
+      <p class="profile-bio">AI Researcher & Vibe Coder | Exploring Algorithms & Products</p>
+      <div class="profile-links">
+        <a href="https://github.com/Halucinaut" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+        <a href="mailto:sunruox_i@163.com">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 时间流标题 -->
+  <section class="timeline-header">
+    <h2>🚀 Recent Updates</h2>
+    <p class="timeline-subtitle">Latest project activities and releases</p>
+  </section>
+
+  <!-- 时间流内容 -->
+  <section class="timeline">
+    {{ $allProjects := where .Site.RegularPages "Section" "projects" }}
+    {{ $subProjects := where $allProjects "Params.parent_project" "!=" nil }}
+    {{ $sortedProjects := $subProjects.ByDate.Reverse }}
+    
+    {{ range $sortedProjects }}
+    <article class="timeline-item">
+      <div class="timeline-marker">
+        <div class="marker-dot"></div>
+        <div class="marker-line"></div>
+      </div>
+      
+      <div class="timeline-content">
+        <div class="timeline-meta">
+          <time class="timeline-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+          {{ if .Params.parent_project }}
+          <span class="timeline-parent">in {{ .Params.parent_project }}</span>
+          {{ end }}
+        </div>
+        
+        <div class="timeline-card">
+          {{ if .Params.cover.image }}
+          <a href="{{ .RelPermalink }}" class="timeline-image">
+            <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" />
+          </a>
+          {{ end }}
+          
+          <div class="timeline-body">
+            <h3 class="timeline-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            
+            {{ if .Summary }}
+            <p class="timeline-summary">{{ .Summary }}</p>
+            {{ end }}
+            
+            {{ if .Params.tags }}
+            <div class="timeline-tags">
+              {{ range .Params.tags }}
+              <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+            
+            <div class="timeline-actions">
+              <a href="{{ .RelPermalink }}" class="action-link">View Details →</a>
+              {{ if .Params.repo_url }}
+              <a href="{{ .Params.repo_url }}" target="_blank" rel="noopener" class="action-link external">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                Code
+              </a>
+              {{ end }}
+              {{ if .Params.demo_url }}
+              <a href="{{ .Params.demo_url }}" target="_blank" rel="noopener" class="action-link external">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Demo
+              </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </section>
+
+  <!-- 查看更多 -->
+  <section class="timeline-footer">
+    <a href="/projects/" class="view-all-btn">View All Projects →</a>
+  </section>
+
+</div>
+
+<style>
+/* 主页时间流样式 */
+.home-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* 顶部简介 */
+.profile-section {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin: 0 0 24px 0;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.profile-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--entry);
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.profile-links a:hover {
+  background: var(--border);
+  transform: translateY(-2px);
+}
+
+.profile-links svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* 时间流标题 */
+.timeline-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: var(--primary);
+}
+
+.timeline-subtitle {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* 时间流 */
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.marker-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--theme);
+  box-shadow: 0 0 0 3px var(--primary);
+}
+
+.marker-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--border), transparent);
+  margin-top: 8px;
+}
+
+.timeline-item:last-child .marker-line {
+  display: none;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-bottom: 32px;
+}
+
+.timeline-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.timeline-date {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.timeline-parent {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+/* 时间流卡片 */
+.timeline-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: var(--entry);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.timeline-card:hover {
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+
+.timeline-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeline-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timeline-title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.timeline-title a:hover {
+  color: var(--secondary);
+}
+
+.timeline-summary {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.timeline-tags .tag {
+  padding: 3px 8px;
+  background: var(--theme);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+}
+
+.timeline-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.action-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.action-link:hover {
+  color: var(--secondary);
+}
+
+.action-link.external svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* 底部按钮 */
+.timeline-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: var(--theme);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.view-all-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* 响应式 */
+@media (max-width: 640px) {
+  .timeline-card {
+    flex-direction: column;
+  }
+  
+  .timeline-image {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .profile-section h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+
+{{ end }}

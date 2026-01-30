@@ -2,59 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:62387/projects/halucinaut-skills/</loc>
+    <loc>http://localhost:1313/projects/halucinaut-skills/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/projects/paper-reproduction-assistant/</loc>
+    <loc>http://localhost:1313/projects/paper-reproduction-assistant/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/code-audit/</loc>
+    <loc>http://localhost:1313/tags/code-audit/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/cognitive-architecture/</loc>
+    <loc>http://localhost:1313/tags/cognitive-architecture/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/deep-learning/</loc>
+    <loc>http://localhost:1313/tags/deep-learning/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/infrastructure/</loc>
+    <loc>http://localhost:1313/tags/infrastructure/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/paper-reproduction/</loc>
+    <loc>http://localhost:1313/tags/paper-reproduction/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/research-tools/</loc>
+    <loc>http://localhost:1313/tags/research-tools/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/sop/</loc>
+    <loc>http://localhost:1313/tags/sop/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/sota/</loc>
+    <loc>http://localhost:1313/tags/sota/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62387/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:62387/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:62387/tags/claude/</loc>
+    <loc>http://localhost:1313/demos/</loc>
   </url><url>
-    <loc>http://localhost:62387/demos/</loc>
+    <loc>http://localhost:1313/posts/</loc>
   </url><url>
-    <loc>http://localhost:62387/posts/</loc>
-  </url><url>
-    <loc>http://localhost:62387/tags/productivity/</loc>
-  </url><url>
-    <loc>http://localhost:62387/tags/prompt-engineering/</loc>
-  </url><url>
-    <loc>http://localhost:62387/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
