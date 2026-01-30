@@ -34,10 +34,10 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: actions/setup-hugo@v5
         with:
-          hugo-version: extended_latest
-          extended: true
+          hugo-extended: true
+          version: '0.125.0'
 
       - name: Build
         run: |
