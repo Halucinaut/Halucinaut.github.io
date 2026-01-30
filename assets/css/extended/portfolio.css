@@ -52,3 +52,94 @@
     height: auto;
     object-fit: cover;
 }
+
+/* 子项目区域样式 */
+.sub-projects {
+    margin: 40px 0;
+    padding: 30px;
+    background: var(--entry);
+    border-radius: 12px;
+}
+
+.sub-projects h2 {
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.sub-project-card {
+    background: var(--theme);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border);
+}
+
+.sub-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.sub-project-card .card-link {
+    display: block;
+}
+
+.sub-project-card .entry-cover {
+    margin: 0;
+}
+
+.sub-project-card .entry-cover img {
+    border-radius: 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sub-project-card .card-content {
+    padding: 20px;
+}
+
+.sub-project-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.2rem;
+}
+
+.sub-project-card h3 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.sub-project-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.sub-project-card .card-summary {
+    margin: 0 0 16px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.sub-project-card .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sub-project-card .tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: var(--entry);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+}

@@ -5,7 +5,19 @@
     <loc>http://localhost:62956/projects/claude-skills/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:62956/projects/halucinaut-skills/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62956/projects/paper-reproduction-assistant/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62956/tags/code-audit/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:62956/tags/cognitive-architecture/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62956/tags/deep-learning/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:62956/</loc>
@@ -17,10 +29,19 @@
     <loc>http://localhost:62956/projects/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:62956/tags/paper-reproduction/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:62956/tags/research-tools/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:62956/tags/sop/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62956/tags/sota/</loc>
+    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:62956/tags/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:62956/about/</loc>

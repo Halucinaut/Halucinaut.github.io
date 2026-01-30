@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{ end }}
+    {{ if not (.Param "hidemeta") }}
+    <div class="post-meta">
+      {{ partial "post_meta.html" . }}
+    </div>
+    {{ end }}
+  </header>
+
+  {{ if .Params.cover.image }}
+  <figure class="entry-cover">
+    <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt }}" />
+  </figure>
+  {{ end }}
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  <!-- 子项目展示区域 -->
+  {{ $currentTitle := .Title }}
+  {{ $subProjects := where .Site.RegularPages "Params.parent_project" $currentTitle }}
+  {{ if $subProjects }}
+  <section class="sub-projects">
+    <h2>⭐ Featured Skills</h2>
+    <div class="projects-grid">
+      {{ range $subProjects }}
+      <article class="project-card sub-project-card">
+        {{ if .Params.cover.image }}
+        <a href="{{ .RelPermalink }}" class="card-link">
+          <figure class="entry-cover">
+            <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt }}" />
+          </figure>
+        </a>
+        {{ end }}
+        <div class="card-content">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ if .Summary }}
+          <p class="card-summary">{{ .Summary }}</p>
+          {{ end }}
+          {{ if .Params.tags }}
+          <div class="card-tags">
+            {{ range .Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- 项目按钮 -->
+  <div class="project-buttons">
+    {{ if .Params.demo_url }}
+    <a class="button-demo" href="{{ .Params.demo_url }}" target="_blank" rel="noopener">🚀 Live Demo</a>
+    {{ end }}
+    {{ if .Params.repo_url }}
+    <a class="button-repo" href="{{ .Params.repo_url }}" target="_blank" rel="noopener">💻 Source Code</a>
+    {{ end }}
+  </div>
+
+  <footer class="post-footer">
+    {{ if .Params.tags }}
+    <ul class="post-tags">
+      {{ range .Params.tags }}
+      <li><a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </footer>
+
+  {{ if not (.Param "comments") }}
+  {{ partial "comments.html" . }}
+  {{ end }}
+</article>
+
+{{ end }}
