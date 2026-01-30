@@ -1,0 +1,91 @@
+baseURL = 'https://halucinaut.github.io/'
+languageCode = 'zh-cn'
+title = "Halucinaut's Lab"
+theme = 'PaperMod'
+
+# 代码高亮配置
+pygmentsUseClasses = true
+pygmentsStyle = "monokai"
+
+# 搜索功能
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# 导航栏菜单
+[[menu.main]]
+identifier = "projects"
+name = "Labs"
+url = "/projects/"
+weight = 10
+
+[[menu.main]]
+identifier = "posts"
+name = "Notes"
+url = "/posts/"
+weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 30
+
+# 参数配置
+[params]
+# 数学公式支持
+math = true
+
+# 默认主题（自动/暗色/亮色）
+defaultTheme = "auto"
+
+# 显示阅读时间
+ShowReadingTime = true
+
+# 显示分享按钮
+ShowShareButtons = true
+
+# 显示文章导航
+ShowPostNavLinks = true
+
+# 显示面包屑导航
+ShowBreadCrumbs = true
+
+# 显示代码复制按钮
+ShowCodeCopyButtons = true
+
+# 主页配置 - Profile 模式
+[params.profileMode]
+enabled = true
+title = "Halucinaut"
+subtitle = "AI Researcher & Vibe Coder | Exploring Algorithms & Products"
+imageUrl = ""
+imageTitle = ""
+imageWidth = 120
+imageHeight = 120
+
+# 社交链接
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Halucinaut"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:"
+
+# 文章页面配置
+[params.assets]
+disableHLJS = true
+
+# 搜索配置
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# 作者信息（使用 params.author 替代已弃用的 [author]）
+[params.author]
+name = "Halucinaut"
