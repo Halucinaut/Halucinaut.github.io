@@ -77,11 +77,13 @@
 
 /* 图片保持原始比例，占满卡片宽度 */
 .projects-list .project-card .entry-cover {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     overflow: hidden;
     width: 100%;
     display: block;
+    border: none;
+    background: none;
 }
 
 .projects-list .project-card .entry-cover img {
@@ -90,6 +92,16 @@
     display: block;
     vertical-align: top;
     transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* 重置 post-entry 可能带来的样式 */
+.projects-list .post-entry.project-card {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: none;
 }
 
 .projects-list .project-card:hover .entry-cover img {
