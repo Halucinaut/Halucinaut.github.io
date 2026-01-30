@@ -2,53 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://halucinaut.github.io/projects/halucinaut-skills/</loc>
+    <loc>http://localhost:62750/projects/halucinaut-skills/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/projects/paper-reproduction-assistant/</loc>
+    <loc>http://localhost:62750/projects/paper-reproduction-assistant/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/code-audit/</loc>
+    <loc>http://localhost:62750/tags/code-audit/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/cognitive-architecture/</loc>
+    <loc>http://localhost:62750/tags/cognitive-architecture/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/deep-learning/</loc>
+    <loc>http://localhost:62750/tags/deep-learning/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/</loc>
+    <loc>http://localhost:62750/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/infrastructure/</loc>
+    <loc>http://localhost:62750/tags/infrastructure/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/projects/</loc>
+    <loc>http://localhost:62750/projects/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/paper-reproduction/</loc>
+    <loc>http://localhost:62750/tags/paper-reproduction/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/research-tools/</loc>
+    <loc>http://localhost:62750/tags/research-tools/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/sop/</loc>
+    <loc>http://localhost:62750/tags/sop/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/sota/</loc>
+    <loc>http://localhost:62750/tags/sota/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/tags/</loc>
+    <loc>http://localhost:62750/tags/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://halucinaut.github.io/about/</loc>
+    <loc>http://localhost:62750/about/</loc>
   </url><url>
-    <loc>https://halucinaut.github.io/categories/</loc>
+    <loc>http://localhost:62750/categories/</loc>
   </url><url>
-    <loc>https://halucinaut.github.io/demos/</loc>
+    <loc>http://localhost:62750/tags/claude/</loc>
   </url><url>
-    <loc>https://halucinaut.github.io/posts/</loc>
+    <loc>http://localhost:62750/demos/</loc>
   </url><url>
-    <loc>https://halucinaut.github.io/search/</loc>
+    <loc>http://localhost:62750/posts/</loc>
+  </url><url>
+    <loc>http://localhost:62750/tags/productivity/</loc>
+  </url><url>
+    <loc>http://localhost:62750/tags/prompt-engineering/</loc>
+  </url><url>
+    <loc>http://localhost:62750/search/</loc>
   </url>
 </urlset>
