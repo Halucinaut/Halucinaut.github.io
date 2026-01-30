@@ -9,9 +9,7 @@
     <div class="post-description">{{ .Description }}</div>
     {{ end }}
     {{ if not (.Param "hidemeta") }}
-    <div class="post-meta">
-      {{ partial "post_meta.html" . }}
-    </div>
+    <!-- 隐藏元信息（阅读时间、作者等） -->
     {{ end }}
   </header>
 
