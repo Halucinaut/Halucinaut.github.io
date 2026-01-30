@@ -15,32 +15,22 @@
 {{ range .Pages }}
 {{ if not .Params.parent_project }}
 <article class="post-entry project-card">
-  {{ if .Params.cover.image }}
-  <figure class="entry-cover">
-    <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt }}" />
-  </figure>
-  {{ end }}
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h2>
-  </header>
-  {{ if .Summary }}
-  <div class="entry-content">
-    <p>{{ .Summary }}</p>
-  </div>
-  {{ end }}
-  <footer class="entry-footer">
-    {{ partial "post_meta.html" . }}
-  </footer>
-  <div class="project-buttons">
-    {{ if .Params.demo_url }}
-    <a class="button-demo" href="{{ .Params.demo_url }}" target="_blank" rel="noopener">🚀 Live Demo</a>
+  <a href="{{ .RelPermalink }}" class="card-link">
+    {{ if .Params.cover.image }}
+    <figure class="entry-cover">
+      <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt }}" />
+    </figure>
     {{ end }}
-    {{ if .Params.repo_url }}
-    <a class="button-repo" href="{{ .Params.repo_url }}" target="_blank" rel="noopener">💻 Source Code</a>
-    {{ end }}
-  </div>
+    <div class="card-body">
+      <header class="entry-header">
+        <h2>{{ .Title }}</h2>
+      </header>
+      <div class="card-footer">
+        <span class="post-date">{{ .Date.Format "01-02" }}</span>
+        <span class="likes">{{ .Params.likes | default 0 }}</span>
+      </div>
+    </div>
+  </a>
 </article>
 {{ end }}
 {{ end }}

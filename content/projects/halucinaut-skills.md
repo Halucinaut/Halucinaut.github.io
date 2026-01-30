@@ -11,6 +11,7 @@ demo_url: ""
 repo_url: "https://github.com/Halucinaut/halucinaut-skills"
 summary: "A centralized registry for AI Skills. Engineered to bridge the gap between abstract requirements and concrete execution."
 layout: "skills-list"
+likes: 128
 ---
 
 ## 📖 Overview
