@@ -202,8 +202,8 @@
     }
 }
 
-/* 子项目详情页隐藏主封面图（只隐藏文章顶部的封面，不隐藏卡片中的图片） */
-.sub-project-page > .entry-cover {
+/* 所有项目详情页隐藏封面图（图片只在卡片中显示） */
+.post-single > .entry-cover {
     display: none;
 }
 
