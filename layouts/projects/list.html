@@ -13,6 +13,7 @@
 
 <div class="projects-list">
 {{ range .Pages }}
+{{ if not .Params.parent_project }}
 <article class="post-entry project-card">
   {{ if .Params.cover.image }}
   <figure class="entry-cover">
@@ -41,6 +42,7 @@
     {{ end }}
   </div>
 </article>
+{{ end }}
 {{ end }}
 </div>
 
