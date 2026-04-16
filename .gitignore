@@ -1,0 +1,19 @@
+# Claude Code local files
+CLAUDE.md
+.claude/
+
+# macOS system files
+.DS_Store
+
+# Environment files with secrets
+*.local.yaml
+*.local.yml
+.env
+.env.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
