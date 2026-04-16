@@ -3,7 +3,7 @@ title: "Nano Ant"
 date: 2025-04-16
 weight: 3
 description: "不是又一个 Agent 框架，而是专注于'迭代优化'这个被忽视的核心环节。"
-tags: ["Agent Framework", "Prompt Optimization", "Python", "Iteration", "LLM Tools"]
+tags: ["Agent Harness", "Self-Evolving"]
 cover:
     image: "images/nano-ant-cover.png"
     alt: "Nano Ant"
