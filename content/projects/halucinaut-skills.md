@@ -1,6 +1,6 @@
 ---
 title: "Halucinaut Skills Registry"
-date: 2024-02-01
+date: 2025-01-15
 weight: 1
 description: "A registry of modular cognitive skills designed to help AI models accurately implement user requirements."
 tags: ["Infrastructure", "Cognitive Architecture", "SOP", "Research Tools"]

@@ -51,9 +51,8 @@
   <!-- 时间流内容 -->
   <section class="timeline">
     {{ $allProjects := where .Site.RegularPages "Section" "projects" }}
-    {{ $subProjects := where $allProjects "Params.parent_project" "!=" nil }}
-    {{ $sortedProjects := $subProjects.ByDate.Reverse }}
-    
+    {{ $sortedProjects := $allProjects.ByDate.Reverse }}
+
     {{ range $sortedProjects }}
     <article class="timeline-item">
       <div class="timeline-marker">

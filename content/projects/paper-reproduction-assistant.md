@@ -1,6 +1,6 @@
 ---
 title: "Paper Reproduction Assistant"
-date: 2024-02-01
+date: 2025-01-28
 weight: 2
 description: "A standardized paper reproduction expert knowledge base. Injects 'top-tier conference reviewer' level code audit and replication capabilities into AI coding assistants."
 tags: ["Paper Reproduction", "Code Audit", "SOTA", "Deep Learning"]
