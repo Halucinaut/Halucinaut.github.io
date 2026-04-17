@@ -2,53 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/halucinaut-skills/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/projects/halucinaut-skills/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/paper-reproduction-assistant/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/projects/paper-reproduction-assistant/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/code-audit/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/projects/nano-ant/</loc>
+    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cognitive-architecture/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/projects/doppel/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/deep-learning/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/experiential-testing/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/infrastructure/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/projects/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/sandbox-runtime/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/paper-reproduction/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/synthetic-user/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/research-tools/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sop/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/ux-evaluation/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sota/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/agent-harness/</loc>
+    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <loc>https://halucinaut.github.io/tags/self-evolving/</loc>
+    <lastmod>2026-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://halucinaut.github.io/tags/ai-research/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://halucinaut.github.io/tags/engineering/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/demos/</loc>
+    <loc>https://halucinaut.github.io/tags/evaluation/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://halucinaut.github.io/tags/llm/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://halucinaut.github.io/posts/llm-as-a-judge/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/posts/</loc>
+    <lastmod>2025-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/code-audit/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/deep-learning/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/paper-reproduction/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/sota/</loc>
+    <lastmod>2025-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/cognitive-architecture/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/infrastructure/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/research-tools/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/tags/sop/</loc>
+    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://halucinaut.github.io/about/</loc>
+  </url><url>
+    <loc>https://halucinaut.github.io/categories/</loc>
+  </url><url>
+    <loc>https://halucinaut.github.io/demos/</loc>
+  </url><url>
+    <loc>https://halucinaut.github.io/search/</loc>
   </url>
 </urlset>

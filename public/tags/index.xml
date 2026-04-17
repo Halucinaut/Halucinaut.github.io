@@ -2,66 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Halucinaut&#39;s Lab</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://halucinaut.github.io/tags/</link>
     <description>Recent content in Tags on Halucinaut&#39;s Lab</description>
     <generator>Hugo -- 0.155.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://halucinaut.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Code Audit</title>
-      <link>http://localhost:1313/tags/code-audit/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/code-audit/</guid>
+      <title>Experiential Testing</title>
+      <link>https://halucinaut.github.io/tags/experiential-testing/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/experiential-testing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Cognitive Architecture</title>
-      <link>http://localhost:1313/tags/cognitive-architecture/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cognitive-architecture/</guid>
+      <title>Sandbox Runtime</title>
+      <link>https://halucinaut.github.io/tags/sandbox-runtime/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/sandbox-runtime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Synthetic User</title>
+      <link>https://halucinaut.github.io/tags/synthetic-user/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/synthetic-user/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UX Evaluation</title>
+      <link>https://halucinaut.github.io/tags/ux-evaluation/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/ux-evaluation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent Harness</title>
+      <link>https://halucinaut.github.io/tags/agent-harness/</link>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/agent-harness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Evolving</title>
+      <link>https://halucinaut.github.io/tags/self-evolving/</link>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/self-evolving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Research</title>
+      <link>https://halucinaut.github.io/tags/ai-research/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/ai-research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>https://halucinaut.github.io/tags/engineering/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evaluation</title>
+      <link>https://halucinaut.github.io/tags/evaluation/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/evaluation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://halucinaut.github.io/tags/llm/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code Audit</title>
+      <link>https://halucinaut.github.io/tags/code-audit/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/code-audit/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Learning</title>
-      <link>http://localhost:1313/tags/deep-learning/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Infrastructure</title>
-      <link>http://localhost:1313/tags/infrastructure/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/infrastructure/</guid>
+      <link>https://halucinaut.github.io/tags/deep-learning/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Paper Reproduction</title>
-      <link>http://localhost:1313/tags/paper-reproduction/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/paper-reproduction/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Research Tools</title>
-      <link>http://localhost:1313/tags/research-tools/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/research-tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SOP</title>
-      <link>http://localhost:1313/tags/sop/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sop/</guid>
+      <link>https://halucinaut.github.io/tags/paper-reproduction/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/paper-reproduction/</guid>
       <description></description>
     </item>
     <item>
       <title>SOTA</title>
-      <link>http://localhost:1313/tags/sota/</link>
-      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sota/</guid>
+      <link>https://halucinaut.github.io/tags/sota/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/sota/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cognitive Architecture</title>
+      <link>https://halucinaut.github.io/tags/cognitive-architecture/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/cognitive-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>https://halucinaut.github.io/tags/infrastructure/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Tools</title>
+      <link>https://halucinaut.github.io/tags/research-tools/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/research-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SOP</title>
+      <link>https://halucinaut.github.io/tags/sop/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/tags/sop/</guid>
       <description></description>
     </item>
   </channel>

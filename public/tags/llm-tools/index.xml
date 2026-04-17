@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LLM Tools on Halucinaut&#39;s Lab</title>
+    <link>https://halucinaut.github.io/tags/llm-tools/</link>
+    <description>Recent content in LLM Tools on Halucinaut&#39;s Lab</description>
+    <generator>Hugo -- 0.155.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://halucinaut.github.io/tags/llm-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nano Ant</title>
+      <link>https://halucinaut.github.io/projects/nano-ant/</link>
+      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/projects/nano-ant/</guid>
+      <description>不是又一个 Agent 框架，而是专注于&amp;#39;迭代优化&amp;#39;这个被忽视的核心环节。</description>
+    </item>
+  </channel>
+</rss>

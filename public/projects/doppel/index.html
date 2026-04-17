@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Doppel | Halucinaut&#39;s Lab</title>
+<meta name="keywords" content="Synthetic User, Experiential Testing, Sandbox Runtime, UX Evaluation">
+<meta name="description" content="不是功能测试工具，而是体验验证系统。让 AI 以&#39;第一次接触产品的真实用户&#39;身份，在上线前暴露认知摩擦和流失风险。">
+<meta name="author" content="map[name:Halucinaut]">
+<link rel="canonical" href="https://halucinaut.github.io/projects/doppel/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.57a072da833aeb71f00413c8ce8493b14773fe624fbacd54012bf5be2e60540c.css" integrity="sha256-V6By2oM663HwBBPIzoSTsUdz/mJPus1UASv1vi5gVAw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://halucinaut.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://halucinaut.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://halucinaut.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://halucinaut.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://halucinaut.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://halucinaut.github.io/projects/doppel/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<meta property="og:url" content="https://halucinaut.github.io/projects/doppel/">
+  <meta property="og:site_name" content="Halucinaut&#39;s Lab">
+  <meta property="og:title" content="Doppel">
+  <meta property="og:description" content="不是功能测试工具，而是体验验证系统。让 AI 以&#39;第一次接触产品的真实用户&#39;身份，在上线前暴露认知摩擦和流失风险。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-04-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-12T00:00:00+00:00">
+    <meta property="article:tag" content="Synthetic User">
+    <meta property="article:tag" content="Experiential Testing">
+    <meta property="article:tag" content="Sandbox Runtime">
+    <meta property="article:tag" content="UX Evaluation">
+    <meta property="og:image" content="https://halucinaut.github.io/images/doppel-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://halucinaut.github.io/images/doppel-cover.png">
+<meta name="twitter:title" content="Doppel">
+<meta name="twitter:description" content="不是功能测试工具，而是体验验证系统。让 AI 以&#39;第一次接触产品的真实用户&#39;身份，在上线前暴露认知摩擦和流失风险。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Labs",
+      "item": "https://halucinaut.github.io/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Doppel",
+      "item": "https://halucinaut.github.io/projects/doppel/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Doppel",
+  "name": "Doppel",
+  "description": "不是功能测试工具，而是体验验证系统。让 AI 以'第一次接触产品的真实用户'身份，在上线前暴露认知摩擦和流失风险。",
+  "keywords": [
+    "Synthetic User", "Experiential Testing", "Sandbox Runtime", "UX Evaluation"
+  ],
+  "articleBody": "问题意识 AI 把\"做出一个产品\"的成本降得很低，却没有同步降低\"判断这个产品是不是能被陌生人真正用起来\"的成本。\n今天的测试工具解决了不同层的问题：单元测试验证代码逻辑，集成测试验证系统协作，E2E 测试验证预定义路径是否可走通。但仍然缺失一个问题的答案：\n第一次来的用户，会不会看不懂、找不到、点不下去、或者直接流失？\n核心洞察 Doppel 是一个 Synthetic User Runtime。它让 AI 代理以\"第一次接触产品的真实用户\"身份，进入一个目标产品，在尽量少的背景信息下完成指定任务，并输出基于行为证据的体验反馈。\n目标不是回答\"这个功能是否正常工作\"，而是回答：\n一个陌生人第一次来到这里，能不能理解这个产品？ 他会不会在关键路径上迷路、犹豫、点错、放弃？ 哪些页面、文案、交互会制造认知摩擦？ 四大原则 冷启动优先 —— Agent 只拿到最少产品语义信息，验证产品本身是否自解释。\n视觉优先于 DOM —— 对页面的理解以视觉结果为主，测的是\"用户会如何理解页面\"，而不是\"页面结构允许什么\"。\nSandbox 优先于 Workflow —— 必须在可控环境中运行，使测试可以隔离、重置、重复和比较。\n证据优先于观点 —— 报告中的结论必须绑定具体行为证据：第几步停留多久、在同一页面来回跳转几次、点击错误按钮几次后才找到主路径。\n系统架构 Doppel 由 4 个核心子系统组成：\nSandboxManager —— 准备隔离环境 AgentRuntime —— 执行体验过程 JudgeEngine —— 把证据变成结论 ReportBuilder —— 输出体验报告 CLI 只是入口，Sandbox 才是测试基础设施。\n",
+  "wordCount" : "55",
+  "inLanguage": "en",
+  "image":"https://halucinaut.github.io/images/doppel-cover.png","datePublished": "2026-04-12T00:00:00Z",
+  "dateModified": "2026-04-12T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": {"name":"Halucinaut"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://halucinaut.github.io/projects/doppel/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Halucinaut's Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://halucinaut.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://halucinaut.github.io/" accesskey="h" title="Halucinaut&#39;s Lab (Alt + H)">Halucinaut&#39;s Lab</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://halucinaut.github.io/projects/" title="Labs">
+                    <span>Labs</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://halucinaut.github.io/posts/" title="Notes">
+                    <span>Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://halucinaut.github.io/demos/" title="Demos">
+                    <span>Demos</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://halucinaut.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://halucinaut.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://halucinaut.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://halucinaut.github.io/projects/">Labs</a></div>
+    <h1 class="post-title">Doppel</h1>
+    
+    <div class="post-description">不是功能测试工具，而是体验验证系统。让 AI 以&#39;第一次接触产品的真实用户&#39;身份，在上线前暴露认知摩擦和流失风险。</div>
+    
+    
+    
+    
+  </header>
+
+  
+  <figure class="entry-cover">
+    <img loading="lazy" src="https://halucinaut.github.io/images/doppel-cover.png" alt="Doppel" />
+  </figure>
+  
+
+  <div class="post-content">
+    <h2 id="问题意识">问题意识</h2>
+<p>AI 把&quot;做出一个产品&quot;的成本降得很低，却没有同步降低&quot;判断这个产品是不是能被陌生人真正用起来&quot;的成本。</p>
+<p>今天的测试工具解决了不同层的问题：单元测试验证代码逻辑，集成测试验证系统协作，E2E 测试验证预定义路径是否可走通。但仍然缺失一个问题的答案：</p>
+<blockquote>
+<p>第一次来的用户，会不会看不懂、找不到、点不下去、或者直接流失？</p>
+</blockquote>
+<h2 id="核心洞察">核心洞察</h2>
+<p>Doppel 是一个 <strong>Synthetic User Runtime</strong>。它让 AI 代理以&quot;第一次接触产品的真实用户&quot;身份，进入一个目标产品，在尽量少的背景信息下完成指定任务，并输出基于行为证据的体验反馈。</p>
+<p>目标不是回答&quot;这个功能是否正常工作&quot;，而是回答：</p>
+<ul>
+<li>一个陌生人第一次来到这里，能不能理解这个产品？</li>
+<li>他会不会在关键路径上迷路、犹豫、点错、放弃？</li>
+<li>哪些页面、文案、交互会制造认知摩擦？</li>
+</ul>
+<h2 id="四大原则">四大原则</h2>
+<p><strong>冷启动优先</strong> —— Agent 只拿到最少产品语义信息，验证产品本身是否自解释。</p>
+<p><strong>视觉优先于 DOM</strong> —— 对页面的理解以视觉结果为主，测的是&quot;用户会如何理解页面&quot;，而不是&quot;页面结构允许什么&quot;。</p>
+<p><strong>Sandbox 优先于 Workflow</strong> —— 必须在可控环境中运行，使测试可以隔离、重置、重复和比较。</p>
+<p><strong>证据优先于观点</strong> —— 报告中的结论必须绑定具体行为证据：第几步停留多久、在同一页面来回跳转几次、点击错误按钮几次后才找到主路径。</p>
+<h2 id="系统架构">系统架构</h2>
+<p>Doppel 由 4 个核心子系统组成：</p>
+<ul>
+<li><strong>SandboxManager</strong> —— 准备隔离环境</li>
+<li><strong>AgentRuntime</strong> —— 执行体验过程</li>
+<li><strong>JudgeEngine</strong> —— 把证据变成结论</li>
+<li><strong>ReportBuilder</strong> —— 输出体验报告</li>
+</ul>
+<p>CLI 只是入口，Sandbox 才是测试基础设施。</p>
+
+  </div>
+
+  
+  
+  
+  
+
+  
+  <div class="project-buttons">
+    
+    
+    <a class="button-repo" href="https://github.com/Halucinaut/Doppel" target="_blank" rel="noopener">💻 Source Code</a>
+    
+  </div>
+
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://halucinaut.github.io/tags/synthetic-user">Synthetic User</a></li>
+      
+      <li><a href="https://halucinaut.github.io/tags/experiential-testing">Experiential Testing</a></li>
+      
+      <li><a href="https://halucinaut.github.io/tags/sandbox-runtime">Sandbox Runtime</a></li>
+      
+      <li><a href="https://halucinaut.github.io/tags/ux-evaluation">UX Evaluation</a></li>
+      
+    </ul>
+    
+  </footer>
+
+  
+  <script src="https://giscus.app/client.js"
+        data-repo="Halucinaut/Halucinaut.github.io"
+        data-repo-id="R_kgDOREk3zw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOREk3z84C1oam"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</article>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const titles = document.querySelectorAll('.sub-project-card h3');
+    titles.forEach(function(title) {
+        const container = title.parentElement;
+        if (title.scrollWidth > container.clientWidth) {
+            title.setAttribute('data-overflow', 'true');
+        }
+    });
+});
+
+
+if (typeof fetchGiscusReactions !== 'function') {
+    async function fetchGiscusReactions() {
+        const repo = 'Halucinaut/Halucinaut.github.io';
+        const reactionElements = document.querySelectorAll('.giscus-reactions');
+        
+        if (reactionElements.length === 0) return;
+        
+        try {
+            const response = await fetch(`https://api.github.com/repos/${repo}/discussions?per_page=100`);
+            if (!response.ok) throw new Error('Failed to fetch discussions');
+            
+            const discussions = await response.json();
+            
+            reactionElements.forEach(function(el) {
+                const path = el.getAttribute('data-path');
+                const discussion = discussions.find(function(d) {
+                    return d.body && d.body.includes(path);
+                });
+                
+                if (discussion && discussion.reactions) {
+                    const total = discussion.reactions.total_count;
+                    if (total > 0) {
+                        el.textContent = '👍 ' + total;
+                    }
+                }
+            });
+        } catch (error) {
+            console.log('Giscus reactions fetch failed:', error);
+        }
+    }
+    
+    fetchGiscusReactions();
+}
+</script>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://halucinaut.github.io/">Halucinaut&#39;s Lab</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

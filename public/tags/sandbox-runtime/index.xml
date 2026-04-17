@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sandbox Runtime on Halucinaut&#39;s Lab</title>
+    <link>https://halucinaut.github.io/tags/sandbox-runtime/</link>
+    <description>Recent content in Sandbox Runtime on Halucinaut&#39;s Lab</description>
+    <generator>Hugo -- 0.155.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://halucinaut.github.io/tags/sandbox-runtime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doppel</title>
+      <link>https://halucinaut.github.io/projects/doppel/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://halucinaut.github.io/projects/doppel/</guid>
+      <description>不是功能测试工具，而是体验验证系统。让 AI 以&amp;#39;第一次接触产品的真实用户&amp;#39;身份，在上线前暴露认知摩擦和流失风险。</description>
+    </item>
+  </channel>
+</rss>
