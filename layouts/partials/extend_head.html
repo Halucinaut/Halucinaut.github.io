@@ -1,3 +1,14 @@
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
+
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94a68bc4ec243e85788f708e7f054e2a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
