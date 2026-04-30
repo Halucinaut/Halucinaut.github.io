@@ -228,6 +228,70 @@
     }
 }
 
+/* 幻灯片文章阅读器 */
+.deck-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0 28px;
+}
+
+.deck-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.deck-download {
+    background: var(--primary);
+    color: var(--theme);
+    border: 1px solid var(--primary);
+}
+
+.deck-secondary {
+    color: var(--primary);
+    border: 1px solid var(--border);
+    background: var(--entry);
+}
+
+.slide-reader {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 30px 0 10px;
+}
+
+.slide-frame {
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--entry);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.slide-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.slide-frame figcaption {
+    padding: 8px 12px;
+    color: var(--secondary);
+    font-size: 0.78rem;
+    line-height: 1;
+    text-align: right;
+    border-top: 1px solid var(--border);
+}
+
 /* 所有项目详情页隐藏封面图（图片只在卡片中显示） */
 .post-single > .entry-cover {
     display: none;
